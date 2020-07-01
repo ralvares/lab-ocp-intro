@@ -149,7 +149,7 @@ fi
 
 
 ###
-# NOTE: I'm using an image with the workshop already built. quay.io/luisarizmendi/lab-ocp-intro:1.x
+# NOTE: I'm using an image with the workshop already built. quay.io/ralvares/lab-ocp-intro:latest
 # If you want to make any changes # you need to run .workshop/scripts/build-workshop.sh
 # after making the changes.
 # You can also start from the "base" image instead from the one hosted in my quay account, you need to

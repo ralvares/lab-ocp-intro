@@ -2,12 +2,12 @@ FROM quay.io/openshifthomeroom/workshop-dashboard:5.0.0
 
 USER root
 
-COPY . /tmp/src
-
-RUN rm -rf /tmp/src/.git* && \
+RUN git clone --single-branch --branch master --recurse-submodules https://github.com/ralvares/lab-ocp-intro.git /tmp/src/ && \
+    rm -rf /tmp/src/.git* && \
     chown -R 1001 /tmp/src && \
     chgrp -R 0 /tmp/src && \
     chmod -R g+w /tmp/src && \
+    yum update -y && \
     yum install -y mariadb source-to-image tree python2-httpie procps-ng  && \
     pip install yq && \
     curl -L -o hey https://storage.googleapis.com/hey-release/hey_linux_amd64 && \

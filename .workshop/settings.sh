@@ -1,5 +1,5 @@
 WORKSHOP_NAME=lab-ocp-intro
-WORKSHOP_IMAGE=quay.io/luisarizmendi/lab-ocp-intro:1.5
+WORKSHOP_IMAGE=quay.io/ralvares/lab-ocp-intro:latest
 WORKSHOP_TITLE="OCP Introduction"
 WORKSHOP_DESCRIPTION="Get started with your OCP journey"
 RESOURCE_BUDGET=medium
