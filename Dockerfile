@@ -9,6 +9,8 @@ RUN git clone --single-branch --branch master --recurse-submodules https://githu
     chmod -R g+w /tmp/src && \
     yum update -y && \
     yum install -y mariadb source-to-image tree python2-httpie procps-ng  && \
+    yum clean all && \
+    rm -rf /var/cache/yum && \ 
     pip install yq && \
     curl -L -o hey https://storage.googleapis.com/hey-release/hey_linux_amd64 && \
     chmod +x hey && \
